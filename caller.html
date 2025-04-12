@@ -11,16 +11,36 @@
   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
   <script>
-    // Paste your Firebase config here
+    <head>
+  <title>Ticket Caller</title>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js";
+
     const firebaseConfig = {
-      apiKey: "YOUR_API_KEY",
-      authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-      databaseURL: "https://YOUR_PROJECT_ID.firebaseio.com",
-      projectId: "YOUR_PROJECT_ID",
-      storageBucket: "YOUR_PROJECT_ID.appspot.com",
-      messagingSenderId: "YOUR_SENDER_ID",
-      appId: "YOUR_APP_ID"
+      apiKey: "AIzaSyDmEkiHYDraMFY1VtR66lN57rYj5EEVDqE",
+      authDomain: "ticket-system-938d5.firebaseapp.com",
+      projectId: "ticket-system-938d5",
+      storageBucket: "ticket-system-938d5.appspot.com",
+      messagingSenderId: "113986829836",
+      appId: "1:113986829836:web:a2032349ecdbfd7993f829",
+      measurementId: "G-H3ENHV8TS4"
     };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</head>
+    const firebaseConfig = {
+  apiKey: "AIzaSyDmEkiHYDraMFY1VtR66lN57rYj5EEVDqE",
+  authDomain: "ticket-system-938d5.firebaseapp.com",
+  projectId: "ticket-system-938d5",
+  storageBucket: "ticket-system-938d5.appspot.com",
+  messagingSenderId: "113986829836",
+  appId: "1:113986829836:web:a2032349ecdbfd7993f829",
+  measurementId: "G-H3ENHV8TS4"
+};
 
     firebase.initializeApp(firebaseConfig);
     const db = firebase.database();
